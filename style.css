@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15+Charted&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15+Charted&family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(80, 157, 192), white);
+    min-height: 100vh;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+
+.pokedex{
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemon_img{
+    position: absolute;
+    bottom:55%;
+    left: 50%; 
+    height: 18%;
+    max-width: 150px;
+    transform: translate(-63%, 27%);
+}
+
+.pokemon_data {
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54%;
+    left: 27%;
+}
+
+.pokemon_name{
+ color:#3a444d ;
+ text-transform: capitalize;
+ font-size: 1.4rem;
+}
+
+.pokemon_number{
+    font-size: 1.3rem;
+}
+
+.form{
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+
+}
+
+.input_search{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1 rem);
+    box-shadow:  -3px 3.5px 0px rgb(85, 83, 83), -5px 7px 0 black;
+
+}
+
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button{
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1 rem);
+    font-weight: 600;
+    color: white;
+    background-color: #3a444d;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+
+}
+
+.button:active {
+    box-shadow: inset -4px -4px 0 #222;
+    font-size: 0.8rem;
+}
+
+#pokeTwo{
+    max-width: 600px;
+}
+
+
+#tela_Two{
+    display: inline-block;
+    position: absolute;
+    bottom:55%;
+    left: 50%; 
+    height: 18%;
+    max-width: 300px;
+    transform: translate(71%, -50%);
+}
+
+#informacoes{
+    text-align: justify;
+    display: block;
+    position: absolute;
+    bottom:60%;
+    left: 61%; 
+    height: 70%;
+  
+    transform: translate(18%, 78%);
+    
+}
+
+p {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 10px 1px;
+}
+
+@media screen and (max-width: 600px){
+    #tela_Two{
+        display: block;
+        position: absolute;
+        bottom:0%;
+    left: 0%; 
+    height: 18%;
+    max-width:300px;
+    transform: translate(18%, 80%);
+    }
+    
+    #informacoes{
+        text-align: justify;
+        display: block;
+        position: relative;
+        bottom:30%;
+        left: 10%; 
+        height: 50%;
+        transform: translate(12%, 28%);
+        
+    }
+    
+
+ 
+}
