@@ -47,7 +47,7 @@ main {
 .pokemon_name{
  color:#3a444d ;
  text-transform: capitalize;
- font-size: 1.4rem;
+ font-size: 1rem;
 }
 
 .pokemon_number{
@@ -108,35 +108,37 @@ main {
 }
 
 
-#tela_Two{
-    display: inline-block;
-    position: absolute;
-    bottom:55%;
-    left: 50%; 
-    height: 18%;
-    max-width: 300px;
-    transform: translate(71%, -50%);
-}
 
-#informacoes{
-    text-align: justify;
-    display: block;
-    position: absolute;
-    bottom:60%;
-    left: 61%; 
-    height: 70%;
-  
-    transform: translate(18%, 78%);
-    
-}
+    #tela_Two {
+        display: inline-block;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        height: auto;
+        max-width: 100%;
+        transform: translate(62%, -50%);
+        
+    }
 
-p {
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-    padding: 10px 1px;
-}
+
+    #informacoes {
+        text-align: justify;
+        display: block;
+        position: absolute;
+        bottom: 60%;
+        left: 60%;
+        height: 33%;
+        transform: translate(18%, 52%);
+        width: 15%;
+    }
+
+    p {
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1rem;
+        padding: 10px 4px 1px 2px;
+    }
 
 @media screen and (max-width: 600px){
     #tela_Two{
@@ -149,14 +151,15 @@ p {
     transform: translate(18%, 80%);
     }
     
-    #informacoes{
+    #informacoes {
         text-align: justify;
         display: block;
         position: relative;
-        bottom:30%;
-        left: 10%; 
-        height: 50%;
-        transform: translate(12%, 28%);
+        bottom: 30%;
+        left: 11%;
+        height: auto;
+        transform: translate(11%, 16%);
+        width: 63%;
         
     }
     
