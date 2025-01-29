@@ -78,12 +78,13 @@ const renderPokemon = async (pokemon) => {
         searchPokemon = data.id;
 
     } else {
-        pokemonName.innerHTML = 'Não Encontrado'
-
+        pokemonName.innerHTML = 'Não Encontrado';
         pokemonNumber.innerHTML = '';
         pokemonImg.src = '';
         pokemonAbilities.innerHTML = 'Não Informado';
+        
         pokemonEvolution.innerHTML = 'Não Informado';
+        pokemonLocation.innerHTML = 'Não Informado';
         input.value = '';
     }   
 }
